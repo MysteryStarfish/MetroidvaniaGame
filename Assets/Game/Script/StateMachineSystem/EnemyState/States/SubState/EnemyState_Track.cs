@@ -14,7 +14,7 @@ public class EnemyState_Track : EnemyState
         {
             enemyStateMachine.SwitchState(typeof(EnemyState_Idle));
         }
-        if (enemy.isMeleeTrigger && !enemy.enemySkillHandler.isSkillCooldown)
+        if (enemy.isMeleeTrigger || (enemy.isFireTrigger && !enemy.enemySkillHandler.isSkillCooldown))
         {
             enemyStateMachine.SwitchState(typeof(EnemyState_Skill));
         }

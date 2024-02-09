@@ -3,11 +3,9 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Data/SkillSystem/EnemySkill/Melee", fileName = "EnemySkill_Melee")]
-public class EnemySkill_Melee : EnemySkill
+[CreateAssetMenu(menuName = "Data/SkillSystem/EnemySkill/MeleeNormal", fileName = "EnemySkill_MeleeNormal")]
+public class EnemySkill_MeleeNormal : EnemySkill
 {
-    [SerializeField] private float dashSpeed = 40f;
-
     private bool canHurtPlayer = false;
 
     PlayerDetector_Melee playerDetector_Melee;
@@ -32,14 +30,12 @@ public class EnemySkill_Melee : EnemySkill
         enemySkillHandler.GetComponentInChildren<Transform>().gameObject.GetComponentInChildren<SpriteRenderer>().color = (Color)(new Color32(225, 246, 0, 255));
         base.ActivateAttack();
         canHurtPlayer = true;
-        enemyMovement.Dash(dashSpeed);
     }
     public override void OffAttack()
     {
         enemySkillHandler.GetComponentInChildren<Transform>().gameObject.GetComponentInChildren<SpriteRenderer>().color = (Color)(new Color32(255, 255, 255, 255));
         base.OffAttack();
         canHurtPlayer = false;
-        enemyMovement.Move(0);
     }
     public override void Update()
     {
@@ -51,3 +47,4 @@ public class EnemySkill_Melee : EnemySkill
         }
     }
 }
+

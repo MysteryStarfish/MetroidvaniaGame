@@ -2,17 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Data/SkillSystem/EnemySkill/Fire", fileName = "EnemySkill_Fire")]
-public class EnemySkill_Fire : EnemySkill
+[CreateAssetMenu(menuName = "Data/SkillSystem/EnemySkill/CarrotRain", fileName = "EnemySkill_CarrotRain")]
+public class EnemySkill_CarrotRain : EnemySkill
 {
     private bool canHurtPlayer = false;
 
     PlayerDetector_Melee playerDetector_Melee;
-    Bullet bullet;
+    RainBullet bullet;
     public override void SkillAwake()
     {
         playerDetector_Melee = enemySkillHandler.transform.GetChild(2).GetComponent<PlayerDetector_Melee>();
-        bullet = enemySkillHandler.transform.GetChild(3).GetComponent<Bullet>();
+        bullet = enemySkillHandler.transform.GetChild(5).GetComponent<RainBullet>();
     }
     public override void StartAttack()
     {
@@ -32,7 +32,7 @@ public class EnemySkill_Fire : EnemySkill
         enemySkillHandler.transform.GetChild(2).gameObject.GetComponentInChildren<SpriteRenderer>().color = (Color)(new Color32(225, 246, 0, 255));
         base.ActivateAttack();
         canHurtPlayer = true;
-        bullet.Summon();
+        bullet.Summon(playerDetector_Melee.player.transform);
     }
     public override void OffAttack()
     {
@@ -47,7 +47,7 @@ public class EnemySkill_Fire : EnemySkill
         if (bullet.player && canHurtPlayer)
         {
             canHurtPlayer = false;
-            bullet.player.TakeDamage(enemy.currentDamage);
+            playerDetector_Melee.player.TakeDamage(enemy.currentDamage);
             bullet.Recycle(enemySkillHandler.transform);
         }
     }

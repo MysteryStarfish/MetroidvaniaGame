@@ -9,7 +9,7 @@ public class PlayerState_Idle : PlayerGroundedState
     public override void Enter()
     {
         base.Enter();
-        animator.Play("Idle_test");
+        animator.Play("Idle");
     }
     public override void LogicUpdate()
     {

@@ -15,5 +15,5 @@ MonoBehaviour:
   castTime: 2
   activeTime: 3
   backswingTime: 0.5
-  cooldownTime: 5
-  isCooldown: 0
+  cooldownTime: 30
+  isCooldown: 1

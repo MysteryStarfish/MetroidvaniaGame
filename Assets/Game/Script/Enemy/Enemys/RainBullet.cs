@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class RainBullet : MonoBehaviour
 {
     public PlayerHandler player = null;
     private Rigidbody2D rb;
@@ -9,11 +9,11 @@ public class Bullet : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
     }
-    public void Summon()
+    public void Summon(Transform transform)
     {
-        this.transform.position = transform.position;
+        this.transform.position = transform.position + new Vector3(0f, 15f);
         this.gameObject.SetActive(true);
-        rb.velocity = new Vector3(toward * 20f, 0f);
+        rb.velocity = new Vector3(0f, -20f);
     }
     public void Recycle(Transform transform)
     {
@@ -28,7 +28,7 @@ public class Bullet : MonoBehaviour
         {
             Recycle(this.transform);
         }
-        if (collision.gameObject.CompareTag("Player")) 
+        if (collision.gameObject.CompareTag("Player"))
         {
             player = collision.gameObject.GetComponent<PlayerHandler>();
         }

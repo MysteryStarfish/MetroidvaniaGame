@@ -6,7 +6,7 @@ public class PlayerState_Run : PlayerGroundedState
     public override void Enter()
     {
         base.Enter();
-        animator.Play("Run_test");
+        animator.Play("Run");
     }
     public override void LogicUpdate()
     {

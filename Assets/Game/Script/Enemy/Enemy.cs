@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Reflection.Emit;
 using UnityEditor.VersionControl;
 using UnityEngine;
-using static Cinemachine.CinemachineBlendDefinition;
 
 public abstract class Enemy : MonoBehaviour
 {
@@ -15,7 +14,8 @@ public abstract class Enemy : MonoBehaviour
 
     public bool isPlayerAround => playerDetector.isPlayerAround;
     public bool hasFinishSkill => enemySkillHandler.hasFinishSkill;
-    public bool isMeleeTrigger => enemySkillHandler.isMeleeTrigger || enemySkillHandler.isFireTrigger;
+    public bool isMeleeTrigger => enemySkillHandler.isMeleeTrigger;
+    public bool isFireTrigger => enemySkillHandler.isFireTrigger;
     public bool isReadyForSkill = false;
     
     public float currentHp;

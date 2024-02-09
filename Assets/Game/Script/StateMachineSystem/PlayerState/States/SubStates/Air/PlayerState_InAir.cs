@@ -17,6 +17,10 @@ public class PlayerState_InAir : PlayerAirState
         {
             playerStateMachine.SwitchState(typeof(PlayerState_Fall));
         }
+        if (input.Jump)
+        {
+            input.SetJumpInputBufferTimer();
+        }
     }
     public override void PhysicUpdate()
     {

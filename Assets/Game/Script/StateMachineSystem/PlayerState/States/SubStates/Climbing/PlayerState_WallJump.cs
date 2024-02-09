@@ -17,7 +17,7 @@ public class PlayerState_WallJump : PlayerWallState
         {
             return;
         }
-        if (playerMovement.isFloating)
+        if (playerMovement.isFloating || playerMovement.isJumping)
         {
             playerStateMachine.SwitchState(typeof(PlayerState_InAir));
         }

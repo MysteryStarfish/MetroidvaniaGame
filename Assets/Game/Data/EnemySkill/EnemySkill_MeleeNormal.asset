@@ -7,14 +7,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5f438355ec32244191d589d0820d9e6, type: 3}
-  m_Name: EnemySkill_Melee
+  m_Script: {fileID: 11500000, guid: d0e7c7fd7b6262848805d8d8cda0690e, type: 3}
+  m_Name: EnemySkill_MeleeNormal
   m_EditorClassIdentifier: 
-  castTime: 0.75
-  activeTime: 0.2
-  backswingTime: 1
-  cooldownTime: 30
-  isCooldown: 1
-  dashSpeed: 40
+  castTime: 0.5
+  activeTime: 0.3
+  backswingTime: 0.5
+  cooldownTime: 0
+  isCooldown: 0

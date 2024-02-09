@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5d907edff2391814e8af1e4c76de30cc
+guid: 5747014a60278384e8abcfb14199e314
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: chara_run_0
+      name: chara_jumpfall-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 40
+        height: 58
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62d0f8f7af40f4b43a410a41fd3d9513
-      internalID: -502093020
+      spriteID: e7f7e4d4aafba53488f1088a83138a37
+      internalID: 507293692
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chara_run_1
+      name: chara_jumpfall-Sheet_1
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 40
+        height: 58
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3bedcac923244e45bc133e7a937bf9c
-      internalID: -1797387787
+      spriteID: f8a31de61f3dee74b90b57df176f87dd
+      internalID: -1145571028
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chara_run_2
+      name: chara_jumpfall-Sheet_2
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 40
+        height: 58
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aabf32b1c79dea24e8e3217609116b04
-      internalID: -848193864
+      spriteID: 21675de4c6c9e764eac2ad28d0191d2c
+      internalID: 920203757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chara_run_3
+      name: chara_jumpfall-Sheet_3
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 40
+        height: 58
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2e0bc0e1d5b2074ca0b8458ab3c2e25
-      internalID: 1483466488
+      spriteID: a02f40beb314f5045a41f8bc6f43758f
+      internalID: 661686710
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chara_run_4
+      name: chara_jumpfall-Sheet_4
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 40
+        height: 58
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 354f0f49b89ef484ebba3ad9dfcae321
-      internalID: -740658697
+      spriteID: dd251a4503487704d8d6e184292bd151
+      internalID: -1545301238
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chara_run_5
+      name: chara_jumpfall-Sheet_5
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 40
+        height: 58
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,134 +229,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25beb74ea9f90a54b86071fe49f9da9c
-      internalID: -1714384341
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chara_run_6
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 32
-        height: 40
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5664521d77cf59c47ba0227566b4367b
-      internalID: -212884813
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chara_run_7
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 0
-        width: 32
-        height: 40
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f317b1085120ca44e87fa0b9b044848f
-      internalID: 1776281963
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chara_run_8
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 32
-        height: 40
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 385958c6d2a138d488899e2284f5e1f7
-      internalID: 1967329226
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chara_run_9
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 0
-        width: 32
-        height: 40
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 013c9936fa2b6e5448d5855bd4e5ab95
-      internalID: -140134714
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chara_run_10
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 32
-        height: 40
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5c613c880547c314db18ed3df9a4d0ef
-      internalID: -1177151297
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chara_run_11
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 0
-        width: 32
-        height: 40
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c8d18cb0acc74694c89ae96cffde17a2
-      internalID: -330528043
+      spriteID: d80d1fe6a17ea8440847d9a617a72a43
+      internalID: -438624294
       vertices: []
       indices: 
       edges: []
@@ -372,18 +246,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      chara_run_0: -502093020
-      chara_run_1: -1797387787
-      chara_run_10: -1177151297
-      chara_run_11: -330528043
-      chara_run_2: -848193864
-      chara_run_3: 1483466488
-      chara_run_4: -740658697
-      chara_run_5: -1714384341
-      chara_run_6: -212884813
-      chara_run_7: 1776281963
-      chara_run_8: 1967329226
-      chara_run_9: -140134714
+      chara_jumpfall-Sheet_0: 507293692
+      chara_jumpfall-Sheet_1: -1145571028
+      chara_jumpfall-Sheet_2: 920203757
+      chara_jumpfall-Sheet_3: 661686710
+      chara_jumpfall-Sheet_4: -1545301238
+      chara_jumpfall-Sheet_5: -438624294
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

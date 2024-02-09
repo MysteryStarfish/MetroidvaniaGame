@@ -57,7 +57,13 @@ public class EnemySkillHandler : MonoBehaviour
     }
     public void SkillUpdate()
     {
-        if (isFireTrigger && hasFinishSkill && !skillTable[typeof(EnemySkill_Fire)].isCooldown)
+        if (isFireTrigger && hasFinishSkill && !skillTable[typeof(EnemySkill_CarrotRain)].isCooldown)
+        {
+            Debug.Log("CarrotRain");
+            StopCoroutine(nameof(CarrotRain));
+            StartCoroutine(nameof(CarrotRain));
+        }
+        else if (isFireTrigger && hasFinishSkill && !skillTable[typeof(EnemySkill_Fire)].isCooldown)
         {
             Debug.Log("Fire");
             StopCoroutine(nameof(Fire));
@@ -77,6 +83,12 @@ public class EnemySkillHandler : MonoBehaviour
                 StopCoroutine(nameof(Melee));
                 StartCoroutine(nameof(Melee));
             }
+        }
+        else if (isMeleeTrigger && hasFinishSkill)
+        {
+            Debug.Log("MeleeNormal");
+            StopCoroutine(nameof(MeleeNormal));
+            StartCoroutine(nameof(MeleeNormal));
         }
     }
     private void SwitchSkill(EnemySkill skill)
@@ -117,11 +129,35 @@ public class EnemySkillHandler : MonoBehaviour
 
         StartCoroutine(nameof(Cooldown));
     }
+    private IEnumerator MeleeNormal()
+    {
+        hasFinishSkill = false;
+
+        yield return UseSkill(typeof(EnemySkill_MeleeNormal));
+
+        hasFinishSkill = true;
+
+        StartCoroutine(nameof(Cooldown));
+    }
     private IEnumerator Fire()
     {
         hasFinishSkill = false;
 
         yield return UseSkill(typeof(EnemySkill_Fire));
+
+        hasFinishSkill = true;
+
+        StartCoroutine(nameof(Cooldown));
+    }
+    private IEnumerator CarrotRain()
+    {
+        hasFinishSkill = false;
+
+        yield return UseSkill(typeof(EnemySkill_CarrotRain));
+
+        yield return UseSkill(typeof(EnemySkill_CarrotRain));
+
+        yield return UseSkill(typeof(EnemySkill_CarrotRain));
 
         hasFinishSkill = true;
 
